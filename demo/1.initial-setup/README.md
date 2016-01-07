@@ -1,28 +1,52 @@
-# Add support for payment
+# Initial Django-Oscar Application Setup
 
-We will use django-oscar-paypal to support payment via paypal
-* Add django-oscar-paypal to requirements.txt
-* add 'paypal' to INSTALLED_APPS
+Following mostly follows the django-oscar getting started documentation (http://django-oscar.readthedocs.org/en/latest/internals/getting_started.html)
 
-Create a PayPal sandbox account and 2 test users - a buyer and a seller
-* (https://developer.paypal.com/)
+```
+# libjpeg-dev is required for Pillow
+$ sudo apt-get install libjpeg-dev
+# create and activate virtualenv (using virtualenvwrapper)
+$ mkvirtualenv oscardemo
+$ workon oscardemo
+# install requirements
+(oscardemo)$ pip install -r requirements.txt
+# create the project (was already done..)
+(oscardemo)$ django-admin startproject oscardemo .
+(oscardemo)$ mkdir media
+```
 
-Set the seller API credentials in settings
-* Change settings into a settings directory, with settings hierarchy
- * modify BASE_DIR
- * modify default settings in wsgi.py and manage.py
-* set in override.py:
- * PAYPAL_API_USERNAME = 'test_xxxx.gmail.com'
- * PAYPAL_API_PASSWORD = '123456789'
- * PAYPAL_API_SIGNATURE = '...'
+* see modifications in settings.py
+* see modifications in urls.py
 
-Modify
-* urls.py
-* settings/base.py
+```
+(oscardemo)$ ./manage.py migrate
+(oscardemo)$ ./manage.py runserver
+```
 
-Change checkout button to paypal checkout button
-* templates/basket/partials/basket_content.html
+* populate countries (this is required for shipping), using pycountry package (in requirements.txt)
 
-That's it, now you can make some purchases using the paypal test buyer
-* check out the transactions in dashboard > paypal
-* check out the orders in dashboard > fulfilment > orders
+```
+(oscardemo)$ ./manage.py oscar_populate_countries
+```
+
+* create a super user and runserver
+
+```
+(oscardemo)$ ./manage.py createsuperuser
+(oscardemo)$ ./manage.py runserver
+```
+
+* Configure the catalogue
+ * For our demo app we will use oscar to manage meetups
+ * Each product will be a lecture
+ * The fulfilment partner will be a meetup promoter which sells tickets for the lecture
+ * http://localhost:8000/dashboard
+  * Fulfilment > Partners > Create
+  * Catalogue > Product Types > Create
+  * Catalogue > Categories > Create
+ * (in a real setup - this will probably be done in a data migration)
+* Add some products
+ * Catalogue > Products > Add
+
+it works
+* http://localhost:8000/
