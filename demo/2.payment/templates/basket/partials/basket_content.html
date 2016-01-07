@@ -1,0 +1,15 @@
+{% extends 'oscar/basket/partials/basket_content.html' %}
+{% load i18n %}
+{% load url from future %}
+
+{% block formactions %}
+    <div class="form-group clearfix">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-8">
+                <a href="{% url 'paypal-redirect' %}" class="btn btn-lg btn-default btn-block">
+                    <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif">
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
