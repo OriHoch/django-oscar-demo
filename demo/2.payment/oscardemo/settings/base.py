@@ -165,6 +165,8 @@ OSCAR_ORDER_STATUS_PIPELINE = {
     'Cancelled': (),
 }
 
+OSCAR_DEFAULT_CURRENCY = "ILS"
+
 # paypal
 from django.utils.translation import ugettext_lazy as _
 OSCAR_DASHBOARD_NAVIGATION.append({

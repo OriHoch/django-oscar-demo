@@ -1,5 +1,4 @@
-# it's a good idea to use the django-oscar source, at least while developing - so that you will be able to browse and debug it easily
--e git+https://github.com/django-oscar/django-oscar.git@1.1.1#egg=django-oscar
+django-oscar==1.1.1
 
 # used to populate countries
 pycountry

@@ -1,1 +1,5 @@
 from base import *
+
+PAYPAL_API_USERNAME = 'paypal_seller_username'
+PAYPAL_API_PASSWORD = 'paypal_seller_password'
+PAYPAL_API_SIGNATURE = '...'

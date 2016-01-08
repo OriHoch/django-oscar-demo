@@ -1,6 +1,6 @@
 # Initial Django-Oscar Application Setup
 
-Following mostly follows the django-oscar getting started documentation (http://django-oscar.readthedocs.org/en/latest/internals/getting_started.html)
+Following mostly follows the [django-oscar getting started documentation](http://django-oscar.readthedocs.org/en/latest/internals/getting_started.html)
 
 ```
 # libjpeg-dev is required for Pillow
@@ -15,15 +15,16 @@ $ workon oscardemo
 (oscardemo)$ mkdir media
 ```
 
-* see modifications in settings.py
-* see modifications in urls.py
+* Modify:
+ * [settings.py](oscardemo/settings.py)
+ * [urls.py](oscardemo/urls.py)
 
 ```
 (oscardemo)$ ./manage.py migrate
 (oscardemo)$ ./manage.py runserver
 ```
 
-* populate countries (this is required for shipping), using pycountry package (in requirements.txt)
+* populate countries (this is required for shipping), using pycountry package
 
 ```
 (oscardemo)$ ./manage.py oscar_populate_countries
