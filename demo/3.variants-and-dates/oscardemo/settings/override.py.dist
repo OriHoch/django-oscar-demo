@@ -3,3 +3,15 @@ from base import *
 PAYPAL_API_USERNAME = 'paypal_seller_username'
 PAYPAL_API_PASSWORD = 'paypal_seller_password'
 PAYPAL_API_SIGNATURE = '...'
+
+USE_LESS = True
+LESSC_BIN = os.path.join(BASE_DIR, 'node_modules', '.bin', 'lessc')
+COMPRESS_PRECOMPILERS = (
+    ('text/less', '%s {infile}'%LESSC_BIN),
+)
+STATICFILES_FINDERS = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "compressor.finders.CompressorFinder",
+]
+

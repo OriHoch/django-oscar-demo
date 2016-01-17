@@ -62,4 +62,5 @@ cache/
 image_not_found.jpg
 .project
 .idea/
-
+node_modules/
+CACHE/

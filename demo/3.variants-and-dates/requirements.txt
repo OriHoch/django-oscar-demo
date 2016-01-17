@@ -5,3 +5,4 @@
 pycountry
 
 django-oscar-paypal
+django-extensions
