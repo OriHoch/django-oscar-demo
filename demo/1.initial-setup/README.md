@@ -8,9 +8,17 @@ $ sudo apt-get install libjpeg-dev
 # create and activate virtualenv (using virtualenvwrapper)
 $ mkvirtualenv oscardemo
 $ workon oscardemo
-# install requirements
+```
+
+* install [requirements](requirements.txt)
+
+```bash
 (oscardemo)$ pip install -r requirements.txt
-# create the project (was already done..)
+```
+
+* create the [django project](oscardemo)
+
+```bash
 (oscardemo)$ django-admin startproject oscardemo .
 (oscardemo)$ mkdir media
 ```
