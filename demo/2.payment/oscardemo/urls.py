@@ -22,7 +22,6 @@ from paypal.express.dashboard.app import application as paypal_application
 
 urlpatterns = [
     url(r'^i18n/', include('django.conf.urls.i18n')),
-    # django admin is not officially supported by oscar - you should use the dashboard instead
     url(r'^admin/', include(admin.site.urls)),
 
     # paypal
@@ -31,4 +30,3 @@ urlpatterns = [
 
     url(r'', include(application.urls)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-

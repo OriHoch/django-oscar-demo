@@ -1,6 +1,6 @@
 # Add support for payment
 
-We will use django-oscar-paypal to support payment via paypal
+We will use django-oscar-paypal for very easy support of payment via paypal
 * Add django-oscar-paypal to [requirements.txt](requirements.txt)
 * add 'paypal' to [INSTALLED_APPS](oscardemo/settings/base.py)
 

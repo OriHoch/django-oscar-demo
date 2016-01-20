@@ -103,7 +103,7 @@ STATIC_URL = '/static/'
 
 
 #####################################################
-# all modifications for oscardemo project are below #
+# oscardemo modifications for 1.initial-setup       #
 #####################################################
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -132,7 +132,6 @@ INSTALLED_APPS += [
     'django.contrib.flatpages',
     'compressor',
     'widget_tweaks',
-    'paypal',
 ] + get_core_apps()
 
 SITE_ID = 1
@@ -167,8 +166,17 @@ OSCAR_ORDER_STATUS_PIPELINE = {
 
 OSCAR_DEFAULT_CURRENCY = "ILS"
 
-# paypal
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+#####################################################
+# oscardemo modifications for 2.payment             #
+#####################################################
+
+INSTALLED_APPS += ['paypal']
+
 from django.utils.translation import ugettext_lazy as _
+
+# the dashboard navigation is fully customizable via settings, in this case we just append the paypal menu item
 OSCAR_DASHBOARD_NAVIGATION.append({
     'label': _('PayPal'),
     'icon': 'icon-globe',
@@ -179,5 +187,3 @@ OSCAR_DASHBOARD_NAVIGATION.append({
         },
     ]
 })
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

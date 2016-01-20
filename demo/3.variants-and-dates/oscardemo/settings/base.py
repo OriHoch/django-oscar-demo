@@ -134,10 +134,7 @@ INSTALLED_APPS += [
     'compressor',
     'widget_tweaks',
     'paypal',
-    'oscardemo',
-] + get_core_apps([
-    'oscardemo.promotions'
-])
+]
 
 SITE_ID = 1
 
@@ -185,3 +182,13 @@ OSCAR_DASHBOARD_NAVIGATION.append({
 })
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+########################
+# 3.variants and dates #
+########################
+
+INSTALLED_APPS += [
+    'oscardemo',
+] + get_core_apps([
+    'oscardemo.promotions'
+])

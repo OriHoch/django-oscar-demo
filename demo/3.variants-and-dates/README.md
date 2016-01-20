@@ -15,13 +15,9 @@ edit a product and add variants for different dates:
 
 voila, we have dates
 
-now, let's improve the design a bit
+now, let's improve the design of the homepage a bit
 
-first, let's have a look at the homepage
-
-* http://localhost:8000/
-
-empty.. let's add something to it, as every django app, let's look at urls to see who handles the homepage url
+as every django app, let's look at urls to see who handles the homepage url
 
 * [oscardemo/urls.py](oscardemo/urls.py)
   * oscar uses an [Application](https://github.com/django-oscar/django-oscar/blob/1.1.1/src/oscar/core/application.py) object to manage urls and permission, so let's have a look at the default oscar app to see where the homepage is handled
@@ -71,3 +67,10 @@ Finally, we are ready to add our custom style
 
 * [oscardemo/static/oscar/less/styles.less](oscardemo/static/oscar/less/styles.less)
 * [oscardemo/static/oscar/less/oscardemo/main.less](oscardemo/static/oscar/less/oscardemo/main.less)
+
+Beautiful:
+
+* http://localhost:8000/
+
+
+
