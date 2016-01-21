@@ -5,6 +5,8 @@ from oscar.apps.dashboard.catalogue.forms import (
 )
 
 
+# here we override the core oscar product form
+# and add the cost_price and num_in_stock fields
 class ProductForm(OscarProductForm):
 
     cost_price = forms.FloatField(required=True)
@@ -21,6 +23,7 @@ class ProductForm(OscarProductForm):
         return instance
 
 
+# we remove the currency and price fields as we will only use the cost_price field
 class StockRecordFormSet(OscarStockRecordFormSet):
 
     def _construct_form(self, i, **kwargs):
