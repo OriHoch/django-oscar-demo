@@ -10,9 +10,7 @@ Now, let's simplify things for the shop admin:
 
 Let's start with the dashboard -
 
-* look at previous step (3)
-  * edit a product variant
-  * we want just to have a price field available there which will be automatically used as the cost price
+* we want just to have a cost price and available stock fields available as part of product detail (not in stockrecord)
 
 The dashboard uses html templates, so let's find the product edit template
 
