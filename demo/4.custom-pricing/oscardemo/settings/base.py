@@ -190,4 +190,5 @@ INSTALLED_APPS += [
     'oscardemo.promotions',
     'oscardemo.dashboard.catalogue',
     'oscardemo.catalogue',
+    'oscardemo.partner',
 ])
