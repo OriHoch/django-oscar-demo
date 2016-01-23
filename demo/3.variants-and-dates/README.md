@@ -31,7 +31,7 @@ Oscar uses a class overriding technique where instead of directly importing clas
 
 Oscar has a management command for forking a core app and extending it
 
-* ./manage.py oscar_fork_app promotions oscardemo/promotions
+* ./manage.py oscar_fork_app promotions oscardemo/
   * this created the forked app directory at [oscardemo/promotions](oscardemo/promotions)
 * then, we just need to add it to [INSTALLED_APPS](oscardemo/settings/base.py)
   * note we use the get_core_apps command which hooks into the oscar get_class/get_model system
