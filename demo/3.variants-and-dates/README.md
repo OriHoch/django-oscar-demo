@@ -1,4 +1,4 @@
-# Add variants and dates
+# variants, extending core classes, modifying css using less
 
 Our shop sells lectures and lectures have dates.. So, we should allow each lecture to have multiple dates, and you should be able to buy a ticket for a specific date.
 
