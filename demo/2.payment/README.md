@@ -1,5 +1,8 @@
 # payment (using django-oscar-paypal) and template customization
 
+<p dir=ltr><-- <a href="/demo/1.initial-setup/README.md">Initial Setup</a></p>
+<p dir=rtl> <-- <a href="/demo/3.variants-and-dates/README.md">variants, extending core classes, modifying css using less</a></p>
+
 We will use django-oscar-paypal for very easy support of payment via paypal
 * Add django-oscar-paypal to [requirements.txt](requirements.txt)
 * add 'paypal' to [INSTALLED_APPS](oscardemo/settings/base.py)
@@ -36,3 +39,6 @@ Change checkout button to paypal checkout button
 That's it, now you can make some purchases using the paypal test buyer
 * check out the transactions in dashboard > paypal
 * check out the orders in dashboard > fulfilment > orders
+
+<p dir=ltr><-- <a href="/demo/1.initial-setup/README.md">Initial Setup</a></p>
+<p dir=rtl> <-- <a href="/demo/3.variants-and-dates/README.md">variants, extending core classes, modifying css using less</a></p>
