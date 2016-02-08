@@ -62,3 +62,6 @@ $ workon oscardemo
 
 it works
 * [http://localhost:8000/](http://localhost:8000/)
+
+<p dir=ltr><-- <a href="/README.md">Intro</a></p>
+<p dir=rtl> <-- <a href="/demo/2.payment/README.md">Payment</a></p>
