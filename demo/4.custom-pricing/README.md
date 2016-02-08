@@ -1,5 +1,7 @@
 # pricing customization
 
+<p dir=ltr><-- <a href="/demo/3.variants-and-dates/README.md">variants, extending core classes, modifying css using less</a></p>
+
 Now, let's simplify things for the shop admin:
 
 * The need to input stock records, choosing partner and sku is cumbersome
@@ -53,3 +55,5 @@ now, let's see the modifications:
 * [oscardemo/partner/prices.py](oscardemo/partner/prices.py)
 
 That's it, simple huh? Now, have a look at the site..
+
+<p dir=ltr><-- <a href="/demo/3.variants-and-dates/README.md">variants, extending core classes, modifying css using less</a></p>
