@@ -1,4 +1,4 @@
-# Add support for payment
+# payment (using django-oscar-paypal) and template customization.
 
 We will use django-oscar-paypal for very easy support of payment via paypal
 * Add django-oscar-paypal to [requirements.txt](requirements.txt)
