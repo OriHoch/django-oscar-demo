@@ -1,5 +1,8 @@
 # variants, extending core classes, modifying css using less
 
+<p dir=ltr><-- <a href="/demo/2.payment/README.md">payment (using django-oscar-paypal) and template customization</a></p>
+<p dir=rtl> <-- <a href="/demo/4.custom-pricing/README.md">pricing customization</a></p>
+
 Our shop sells lectures and lectures have dates.. So, we should allow each lecture to have multiple dates, and you should be able to buy a ticket for a specific date.
 
 We will use the oscar variants feature, so that each variant is a date of the same lecture. To do that, we need to delete the existing parnet product stock and add variants for each possible date.
@@ -72,5 +75,5 @@ Beautiful:
 
 * http://localhost:8000/
 
-
-
+<p dir=ltr><-- <a href="/demo/2.payment/README.md">payment (using django-oscar-paypal) and template customization</a></p>
+<p dir=rtl> <-- <a href="/demo/4.custom-pricing/README.md">pricing customization</a></p>
