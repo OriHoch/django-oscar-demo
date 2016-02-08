@@ -1,6 +1,6 @@
 # Initial Django-Oscar Application Setup
 
-Following mostly follows the [django-oscar getting started documentation](http://django-oscar.readthedocs.org/en/latest/internals/getting_started.html)
+If you want, you can skip this and read [django-oscar getting started documentation](http://django-oscar.readthedocs.org/en/latest/internals/getting_started.html) instead..
 
 ```bash
 # libjpeg-dev is required for Pillow
