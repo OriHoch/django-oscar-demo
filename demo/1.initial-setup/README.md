@@ -1,5 +1,8 @@
 # Initial Django-Oscar Application Setup
 
+<p dir=ltr><-- <a href="/README.md">Intro</a></p>
+<p dir=rtl> <-- <a href="/demo/2.payment/README.md">Payment</a></p>
+
 If you want, you can skip this and read [django-oscar getting started documentation](http://django-oscar.readthedocs.org/en/latest/internals/getting_started.html) instead..
 
 ```bash
